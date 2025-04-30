@@ -55,16 +55,18 @@ export const CLEAR_ERRORS = "CLEAR_ERRORS";
 function geturl() {
   const current = process.env.REACT_APP_API;
   if (current == "local") {
-    return "http://localhost:8000";
+    //return "http://localhost:8000";
     //return "https://apk.thepowerplay.co";
     //return "http://46.28.44.4:8000";
+    return "http://82.29.162.170:8000"
 
   }
   //return "https://apk.thepowerplay.co";
   //return "https://dreamelevenclonebackend-m6g4.onrender.com";
   //return "https://dreamelevenclonebackend-7l34.onrender.com";
   //return "https://fantasycricket4u.com"
-  return "https://backend.dreambet11.io"
+  //return "https://backend.dreambet11.io"
+  return "https://gamizo.duckdns.org"
 }
 
 function getfrontendurl() {
