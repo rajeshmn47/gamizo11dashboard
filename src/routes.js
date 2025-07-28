@@ -60,6 +60,7 @@ import SeriesList from "layouts/series";
 import SquadsPage from "layouts/squads";
 import PlayerTable from "layouts/playersTable";
 import TeamList from "layouts/teams";
+import UsersList from "layouts/users";
 
 const routes = [
   {
@@ -107,20 +108,28 @@ const routes = [
   },
   {
     type: "collapse",
+    name: "Users",
+    key: "users",
+    icon: <Icon fontSize="small">sports_cricket</Icon>,
+    route: "/users",
+    component: <UsersList />,
+  },
+  {
+    type: "collapse",
     name: "Squads",
     key: "squads",
     icon: <Icon fontSize="small">groups</Icon>,
     route: "/squads",
     component: <SquadsPage />,
   },
-    {
+  {
     type: "collapse",
     name: "Players",
     key: "players",
     icon: <Icon fontSize="small">groups</Icon>,
     route: "/players",
     component: <PlayerTable />,
-  },  {
+  }, {
     type: "collapse",
     name: "Teams",
     key: "teams",
